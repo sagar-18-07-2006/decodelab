@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 03 | JavaScript Interaction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="HEADER_NAV_01">
+        <div class="container header-flex">
+            <a class="logo-box" href="#home" aria-label="POR IMG home">
+                <img src="assets/background-wave-pattern.webp" alt="POR IMG logo image">
+                <span>POR IMG</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle navigation" aria-expanded="false">MENU</button>
+            <nav class="nav" id="mainNav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#projects">NAVAGE</a></li>
+                    <li><a href="#links">LINKS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            <button class="theme-toggle" id="themeToggle" type="button">LIGHT MODE</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero-container">
+            <div class="container hero-content">
+                <div class="hero-outline">
+                    <p class="small-label">WEEK 03 / BASE THEME</p>
+                    <h1 id="heroTitle">LOREM IPSUM INTERACTIVE</h1>
+                    <p id="heroText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. This week adds buttons, toggles, filters, and dynamic content updates.</p>
+                    <div class="hero-actions">
+                        <a class="cta-box" href="#projects">CALL TO ACTION</a>
+                        <button class="cta-box" id="updateText" type="button">UPDATE TEXT</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="links" class="controls-section">
+            <div class="container filter-row">
+                <div>
+                    <p class="small-label">WEEK 03 ADDITION</p>
+                    <h2>FILTER CONTROLS</h2>
+                    <p id="filterNote">Lorem ipsum dolor sit amet. Use buttons to update the visible modules without changing the base layout.</p>
+                </div>
+                <div class="filter-buttons" aria-label="Project filters">
+                    <button class="filter-button active" type="button" data-category="all">ALL</button>
+                    <button class="filter-button" type="button" data-category="structure">STRUCTURE</button>
+                    <button class="filter-button" type="button" data-category="layout">LAYOUT</button>
+                    <button class="filter-button" type="button" data-category="interaction">INTERACTION</button>
+                    <button class="filter-button" type="button" data-category="form">FORM</button>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="hentcooles">
+            <div class="container section-head">
+                <p class="small-label">PROJECT MODULES</p>
+                <h2>INTERACTIVE MODULE GRID</h2>
+                <p id="visibleCount">Six modules can now be filtered using JavaScript.</p>
+            </div>
+            <div class="container grid-12">
+                <article class="module div1 project-item" data-category="structure">
+                    <div class="img-container">
+                        <img src="assets/background-wave-pattern.webp" alt="POR IMG lorem ipsum project module 1">
+                    </div>
+                    <div class="module-body">
+                        <span>01 / STRUCTURE</span>
+                        <h3>Lorem Ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </article>
+                <article class="module div2 project-item" data-category="layout">
+                    <div class="img-container">
+                        <img src="assets/background-wave-pattern.webp" alt="POR IMG lorem ipsum project module 2">
+                    </div>
+                    <div class="module-body">
+                        <span>02 / LAYOUT</span>
+                        <h3>Dolor Sit</h3>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </article>
+                <article class="module div3 project-item" data-category="interaction">
+                    <div class="img-container">
+                        <img src="assets/background-wave-pattern.webp" alt="POR IMG lorem ipsum project module 3">
+                    </div>
+                    <div class="module-body">
+                        <span>03 / DESIGN</span>
+                        <h3>Amet Module</h3>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    </div>
+                </article>
+                <article class="module div4 project-item" data-category="form">
+                    <div class="img-container">
+                        <img src="assets/background-wave-pattern.webp" alt="POR IMG lorem ipsum project module 4">
+                    </div>
+                    <div class="module-body">
+                        <span>04 / CONTENT</span>
+                        <h3>Consectetur</h3>
+                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </article>
+                <article class="module div5 project-item" data-category="interaction">
+                    <div class="img-container">
+                        <img src="assets/background-wave-pattern.webp" alt="POR IMG lorem ipsum project module 5">
+                    </div>
+                    <div class="module-body">
+                        <span>05 / DETAIL</span>
+                        <h3>Adipiscing</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                    </div>
+                </article>
+                <article class="module div6 project-item" data-category="layout">
+                    <div class="img-container">
+                        <img src="assets/background-wave-pattern.webp" alt="POR IMG lorem ipsum project module 6">
+                    </div>
+                    <div class="module-body">
+                        <span>06 / SYSTEM</span>
+                        <h3>Eiusmod</h3>
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="stats-section" aria-label="Dynamic project data">
+            <div class="container stats-grid">
+                <article class="stat-card">
+                    <strong id="likeCount">0</strong>
+                    <p>Lorem ipsum likes</p>
+                    <button class="cta-box" id="likeButton" type="button">ADD LIKE</button>
+                </article>
+                <article class="stat-card">
+                    <strong id="themeStatus">Dark</strong>
+                    <p>Current theme status</p>
+                </article>
+                <article class="stat-card">
+                    <strong id="cardCount">6</strong>
+                    <p>Visible project modules</p>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contact">
+        <div class="container footer-wrapper">
+            <div class="info-block">
+                <h3>CONTACT INFO BLOCK</h3>
+                <p>Lorem ipsum street 123<br>Technical District<br>Architect Center</p>
+                <div class="accent-line"></div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
